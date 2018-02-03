@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>David Jan Mercado</title>
+	<link rel="stylesheet" href="https://use.typekit.net/cda5yza.css">
+	<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-hover-anim.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style-scroll-anim.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style-loading-effect.css" />
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body>
+
+	<div id="ip-container" class="ip-container">
+		<!-- Header -->
+		<header class="ip-header">
+			<div class="preloader-container">
+				<img class="preloader-gif" src="../assets/preloader.gif"/>
+			</div>
+			<div class="ip-loader">
+				<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+					<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+				</svg>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div class="ip-main">
+
+			<div class="project-page" id="cbp-so-scroller">
+
+				<div class="project-header">
+					<nav class="menu menu--adsila menu--adsila--arrow-left">
+						<a class="menu__item" href="../index.html">
+							<span class="menu__item-name">←</span>
+						</a>
+					</nav>
+					<div class="project-title">Travels in Pixels</div> 
+					<div class="project-subtitle">Personal Project, 2016</div>
+				</div>
+
+				<div class="project-content-full">
+
+					<img class="cover-image" src="images/travels-in-pixels/travels-in-pixels-cover.png" />
+
+					<div class="project-cf-desc">
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<p>Travels in Pixels is a visualization art piece of white paint splatters on a winter night blue canvas. The work looks abstract on the surface but the underlying data reveals the structure of the otherwise seemingly arbitrary piece. Each point represents a specific geolocation on the map where I've set foot in 2015. It's an overview of the year that was, visualized in an extremely minimalist fashion where details only come to life after further inspection.</p>
+								<div class="flex-video">
+									<div class="video-wrapper">
+										<iframe src="https://player.vimeo.com/video/151130568" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<p>Gathering data was the tricky part. It turned out that I had to export all 14,000+ photos from the Photos app on Mac to get the version with GPS data. DSLR photos were not included because I don't organize those in any application. I used exiftool to get the important bits I needed then saved it to a CSV file. I had to run another script to convert latitude and longitude into decimal values (links to all technical details below). I manually removed the duplicate entries where two or more photos have the same exact coordinates. I was crazy not to write any script to do this task but it turned out to be quite manageable. Once I got that sorted out with around 8,000+ photos left, I was ready to put it all together.</p>
+								<div class="project-cf-img-tips">
+									<img src="images/travels-in-pixels/tips-sketch-1.JPG" alt="Sketch 1" />
+									<span></span>
+									<img src="images/travels-in-pixels/tips-sketch-2.JPG" alt="Sketch 2" />
+									<span></span>
+									<img src="images/travels-in-pixels/tips-sketch-3.JPG" alt="Sketch 3" />
+								</div>
+								<p>I used
+									<span class="menu menu--adsila">
+										<a class="menu__item__innerlink" href="https://tilemill-project.github.io/tilemill/" target="_blank">
+											<span class="menu__item-label">Tile Mill </span>
+										</a>
+									</span>
+									to create the map, very convenient if you need something quick and clean. I then exported the map to SVG format for a bit of tweaking in Illustrator.</p>
+								<p>The rest was a matter of experimentation in Processing. I did two versions: the one above where the number of photos I took each day are represented by the diameter of the circle that surrounds the point; and the one below where the path is drawn on the map itself. I chose this certain level of detail to prevent anyone from prying into any of my personal routine.</p>
+							</article>
+						</div>
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<div class="flex-video">
+									<div class="video-wrapper">
+										<iframe src="https://player.vimeo.com/video/151130564" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<img style="margin-bottom: 50px; margin-top: 20px;" src="images/travels-in-pixels/tips-city-names.png" alt="Map with City Names" />
+								<p>It's quite a fun project to work on! I'd probably reuse this over the years just to see how much of the world I've covered. It's truly been an amazing year of travelling around Europe whilst completing my degree and research internship! I met loads of interesting people that I hope I would one day see again somewhere in the world!</p>
+							</article>
+						</div>
+					</div>
+
+					<div class="project-cf-notes">
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<p>Code on
+									<span class="menu menu--adsila">
+										<a class="menu__item__innerlink" href="https://github.com/davidjanmercado/Travels-in-Pixels-2015" target="_blank">
+											<span class="menu__item-label">Github</span>
+										</a>
+									</span>
+									. GPS conversion
+									<span class="menu menu--adsila">
+										<a class="menu__item__innerlink" href="https://github.com/davidjanmercado/GPS-Conversion" target="_blank">
+											<span class="menu__item-label">here</span>
+										</a>
+									</span>
+									.
+								</p>
+							</article>
+						</div>
+					</div>
+
+					<div class="project-cf-notes">
+						<div class="cbp-so-section">
+							<article class="cbp-so-side cbp-so-center">
+								<div>
+									<p class="notes">Tools</p>
+									<p>Processing, Illustrator</p>
+								</div>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div> <!-- end ip main-->
+	</div> <!-- end ip -->
+
+	<script src="../js/loading/modernizr.custom.js"></script>
+	<script src="../js/loading/classie.js"></script>
+	<script src="../js/loading/pathLoader.js"></script>
+	<script src="../js/loading/main.js"></script>
+
+	<script src="../js/modernizr.custom.js"></script>
+	<script src="../js/classie.js"></script>
+	<script src="../js/cbpScroller.js"></script>
+	<script>
+		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+	</script>
+
+</body>
+</html>

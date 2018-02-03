@@ -1,0 +1,473 @@
+@font-face {
+  font-family: "IBMPlexSans-Regular";
+  src: url("fonts/IBMPlexSans-Regular.eot");
+  src: url("fonts/IBMPlexSans-Regular.otf") format("opentype"),
+  	   url("fonts/IBMPlexSans-Regular.ttf") format("truetype"),
+  	   url("fonts/IBMPlexSans-Regular-Latin1.woff") format("woff"),
+  	   url("fonts/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  src: url("fonts/IBMPlexSans-Bold.eot");
+  src: url("fonts/IBMPlexSans-Bold.otf") format("opentype"),
+  	   url("fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Light";
+  src: url("fonts/IBMPlexSans-Light.eot");
+  src: url("fonts/IBMPlexSans-Light.otf") format("opentype"),
+  	   url("fonts/IBMPlexSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  src: url("fonts/IBMPlexSans-Medium.eot");
+  src: url("fonts/IBMPlexSans-Medium.otf") format("opentype"),
+  	   url("fonts/IBMPlexSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSerif-Regular";
+  src: url("fonts/IBMPlexSerif-Regular.otf") format("opentype"),
+  	   url("fonts/IBMPlexSerif-Regular.ttf") format("truetype"),
+  	   url("fonts/IBMPlexSerif-Regular-Latin1.woff") format("woff"),
+  	   url("fonts/IBMPlexSerif-Regular-Latin1.woff2") format("woff2");
+}
+
+/** IBM PLEX FONT COPYRIGHT **/
+/* Copyright 2017 IBM Licensed under the Apache License, Version 2.0 (the "License") */
+/* https://ibm.github.io/type/ */
+
+body {
+	margin: 0;
+	font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+	color: #22242E;
+}
+
+/** HOMEPAGE **/
+
+.main-section {
+	color: #F7EBDA;
+	background-color: #C3332B;
+	height: 100%;
+}
+
+	.my-section {
+		padding: 100px 50px 250px 50px;
+	}
+
+		.my-name {
+			font-size: 30px;
+			font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
+		}
+
+		.my-title {
+			font-size: 20px;
+			font-family: "IBMPlexSans-Light", "aktiv-grotesk", Arial, sans-serif;
+		}
+
+	.project-section {
+		margin: 60px 50px;
+	}
+
+		.section-title {
+			margin-bottom: 10px;
+			font-size: 12px;
+			opacity: 0.7;
+		}
+
+		.section-content {
+			margin-top: 10px;
+			font-size: 24px;
+			font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+			.cheers {
+				margin-bottom: 50px;
+			}
+
+/** ABOUT **/
+.about-section {
+	display: flex;
+	flex-flow: row wrap;
+	color: #22242E;
+	background-color: #F7EBDA;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+	
+	.about-content {
+		font-size: 16px;
+	}
+
+	.about-content p {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+/** CONNECT **/
+.connect-section {
+	display: flex;
+	flex-flow: row wrap;
+	color: #22242E;
+	background-color: #F7EBDA;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 0 50px;
+}
+
+	.connect-section p {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+
+	.ead {
+		color: #C3332B;
+		font-size: 20px;
+		font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
+		unicode-bidi:bidi-override;
+		direction: rtl;
+	}
+
+	.connect-footnote {
+		font-size: 12px;
+		color: #A39C95;
+	}
+
+/** PROJECTS **/
+
+.project-page {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 50px;
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+	.project-header {
+		margin-top: 60px;
+	}
+		.project-title {
+			font-size: 36px;
+			font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
+			line-height: 1.2;
+		}
+		.project-subtitle {
+			font-size: 16px;
+			font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+		}
+		.project-collabs {
+			font-size: 16px;
+			font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+			color: #A39C95;
+		}
+
+		.project-header a {
+			text-decoration: none;
+			color: #C3332B;
+		}
+
+	.project-content-full {
+		margin-top: 50px;
+		/*font-family: "bressay-display", serif;*/
+		font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+		font-size: 16px;
+		width: 100%;
+	}
+		.project-cf-img {
+
+		}
+
+		.project-cf-desc {
+		}
+
+			.project-cf-desc p {
+				margin-bottom: 0;
+			}
+
+			.project-cf-img-ct { /* captain train */
+				display: flex;
+				flex-flow: row wrap;
+			}
+
+			.project-cf-img-gt { /* gravitouch */
+				margin-top: 20px;
+			}
+
+			.project-cf-img-tips, .project-cf-img-iot { /* tips (also used by pv), illusion */
+				margin-top: 50px;
+			}
+
+				.project-cf-img-tips img { 
+					margin-bottom: 50px;
+				}
+
+				.project-cf-img-iot img { /* illusion */
+					margin-top: 0;
+				}
+
+				.project-cf-img-iot figcaption { /* illusion */
+					margin-bottom: 35px;
+				}
+
+			.project-cf-img-pv { /* pritzker full images */
+				margin: 50px 0 20px 0;
+			} 
+
+	.project-cf-notes {
+		margin-top: 20px;
+	}
+
+		.project-cf-notes a {
+			text-decoration: none;
+			color: #C3332B;
+			word-wrap: break-word;
+		}
+
+		.notes {
+			font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #A39C95;
+		}
+
+/** PROJECTS -- IMAGES **/
+
+.project-subsection {
+	font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+	.project-subsection-title {
+		font-size: 30px;
+		font-family: "IBMPlexSans-Medium", "aktiv-grotesk", Arial, sans-serif;
+	}
+
+	.project-subsection-subtitle {
+		font-size: 16px;
+		font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
+		margin-bottom: 30px;
+	}
+
+	.project-subsection-images {
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+		.project-subsection-images .bythrees {
+			display: flex;
+			flex-flow: column wrap;
+		}
+
+/** Logo **/
+
+.project-cf-img-logo p {
+	margin: 0;
+}
+
+/** GENERAL **/
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 100px;
+	height: 0;
+}
+
+.pdf-wrapper {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 50%;
+	height: 0;
+}
+
+	.video-wrapper iframe, .pdf-wrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+img {
+	display: flex;
+	width: 100%;
+}
+
+.cover-image {
+	margin-bottom: 50px;
+}
+
+.inline-image {
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+.img-caption {
+	margin-top: 5px;
+	font-family: "IBMPlexSans-Light", "aktiv-grotesk", Arial, sans-serif;
+	font-size: 12px;
+	color: #A39C95;	
+}
+
+.project-cf-desc a, .project-subsection a {
+	text-decoration: none;
+	color: #C3332B;
+}
+
+.bold {
+	font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
+}
+
+/** MEDIA QUERIES **/
+
+/** Medium **/
+
+@media screen and (min-width: 40em) {
+
+	/** Home page **/
+	.my-section {
+		padding: 150px 100px 300px 100px;
+	}
+
+		.my-name {
+			font-size: 64px;
+		}
+
+		.my-title {
+			font-size: 36px;
+		}
+
+	.project-section {
+		margin: 70px 100px;
+	}
+
+		.section-title {
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+
+		.section-content {
+			margin: 20px 150px 20px 0;
+			font-size: 40px;
+		}
+
+			.item {
+				margin-right: 20px;
+			}
+
+	/** Project **/
+	.project-page {
+		margin: 20px 100px;
+	}
+
+	/** Captain Train Images **/
+	.project-cf-img-ct { /* captain train */
+		display: grid;
+		grid-template-columns: 70% 20%;
+		justify-content: space-between;
+	}
+
+	/** Gravitouch Images **/
+	.project-cf-img-gt { /* gravitouch */
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+		.project-cf-img-gt p {
+			margin-left: 40px;
+		}
+
+	/** TIPS, IOT Images **/
+	.project-cf-img-tips, .project-cf-img-iot {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+		justify-content: space-between;
+		margin: 40px 0;
+	}
+		.project-cf-img-tips img { 
+			margin-bottom: 0;
+		}
+
+		.project-cf-img-iot figcaption {  /* iot */
+			margin-bottom: 0;
+		}
+
+	/** PROJECTS -- IMAGES **/
+	.project-subsection-images .bythrees {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	/** Logo Page -- same as gravitouch images but diff grid system **/
+	.project-cf-img-logo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/** Ead **/
+
+	.connect-section p {
+		font-size: 25px;
+	}
+
+	.ead {
+		font-size: 35px;
+	}
+
+	/** ABOUT **/
+	.about-section {
+		padding: 0 50px 25px 50px;
+	}
+	
+	.about-content {
+		font-size: 25px;
+	}
+
+}
+
+/** Large **/
+
+@media screen and (min-width: 64em) {
+
+	/** Project **/
+	.project-page {
+		margin: 50px 200px;
+	}
+
+	/** General **/
+	.pdf-wrapper {
+		position: relative;
+		padding-top: 25px;
+		padding-bottom: 40%;
+		height: 0;
+	}
+
+	/** ABOUT **/
+	.about-section {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		padding: 0 50px;
+	}
+		
+		.about-content {
+			margin: 0 50px;
+		}
+
+}

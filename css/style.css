@@ -100,6 +100,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 50px;
+	overflow: auto;
 }
 	
 	.about-content {
@@ -371,23 +372,22 @@ img {
 
 	/** Captain Train Images **/
 	.project-cf-img-ct { /* captain train */
-		display: flex;
+		display: grid;
 		grid-template-columns: 70% 20%;
 		justify-content: space-between;
 	}
 
 	/** Gravitouch Images **/
 	.project-cf-img-gt { /* gravitouch */
-		display: flex;
-		flex-flow: row wrap;
-		/*grid-template-columns: 2fr 1fr;*/
-		justify-content: left;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-content: space-between;
 		align-items: center;
 		margin-top: 50px;
 		margin-bottom: 25px;
 	}
 		.project-cf-img-gt p {
-			/*margin-left: 40px;*/
+			margin-left: 40px;
 		}
 
 	/** TIPS, IOT Images **/
@@ -431,18 +431,12 @@ img {
 
 	/** ABOUT **/
 	.about-section {
-		/*padding: 0 50px 25px 50px;*/
-		padding: 75px 100px 0 100px;
+		padding: 0 50px 25px 50px;
 	}
 	
 	.about-content {
-		/*font-size: 25px;*/
-		font-size: 45px;
+		font-size: 25px;
 	}
-
-		.about-content {
-			margin-bottom: 50px;
-		}
 
 }
 

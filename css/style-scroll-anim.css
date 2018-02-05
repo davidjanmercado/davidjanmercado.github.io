@@ -92,9 +92,9 @@
 }
 */
 
-/* Example media queries */
+/** MEDIA QUERIES **/
 
-@media screen and (max-width: 73.5em) {
+/*@media screen and (min-width: 40em) {
 	.cbp-so-scroller {
 		font-size: 65%;
 	}
@@ -108,7 +108,7 @@
 	}
 }
 
-@media screen and (max-width: 41.125em) {
+@media screen and (min-width: 64em) {
 	.cbp-so-side {
 		float: none;
 		width: 100%;
@@ -117,5 +117,5 @@
 	.cbp-so-side img {
 		max-width: 100%;
 	}
-}
+}*/
 

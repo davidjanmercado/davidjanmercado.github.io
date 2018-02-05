@@ -134,12 +134,17 @@
 	transition-timing-function: ease;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (min-width: 40em) {
 	.menu--adsila .menu__item {
 		/*margin: 0 0 2em;*/
 	}
 	.menu--adsila .menu__item-label {
-		display: block;
+		display: inline-block;
+		font-size: 2em;
 		/*margin: 0.5em 0 0 1em;*/
+	}
+
+	.menu--adsila--arrow-left a {
+		font-size: 50px;
 	}
 }

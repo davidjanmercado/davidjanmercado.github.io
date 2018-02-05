@@ -120,3 +120,12 @@
 .tilter--1 .tilter__figure::before {
 	box-shadow: 0 30px 20px rgba(0,0,0,0.5);
 }
+
+
+/** MEDIA QUERY **/
+@media screen {
+	.tilter {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+}

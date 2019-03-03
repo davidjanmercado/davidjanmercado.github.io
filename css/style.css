@@ -105,7 +105,7 @@ body {
 
 /** PROJECT **/
 .project-section {
-	/*padding: 60px 50px;*/
+	padding: 50px 50px 0 50px;
 }
 
 .project-section-back {
@@ -120,8 +120,7 @@ body {
 
 	.section-content {
 		margin-top: 10px;
-		font-size: 24px;
-		font-size: 3.5vw;
+		font-size: 20px;
 		font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
 		display: flex;
 		flex-wrap: wrap;
@@ -196,7 +195,7 @@ body {
 .project-page {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 10px 50px;
+	margin: 50px;
 	font-size: 12px;
 	line-height: 1.7;
 }
@@ -205,16 +204,16 @@ body {
 		/*margin-top: 60px;*/
 	}
 		.project-title {
-			font-size: 36px;
+			font-size: 24px;
 			font-family: "IBMPlexSans-Bold", "aktiv-grotesk", Arial, sans-serif;
 			line-height: 1.2;
 		}
 		.project-subtitle {
-			font-size: 16px;
+			font-size: 14px;
 			font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
 		}
 		.project-collabs {
-			font-size: 16px;
+			font-size: 14px;
 			font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
 			color: #A39C95;
 		}
@@ -228,7 +227,7 @@ body {
 		margin-top: 50px;
 		/*font-family: "bressay-display", serif;*/
 		font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		width: 100%;
 	}
 		.project-cf-img {
@@ -297,12 +296,12 @@ body {
 }
 
 	.project-subsection-title {
-		font-size: 30px;
+		font-size: 24px;
 		font-family: "IBMPlexSans-Medium", "aktiv-grotesk", Arial, sans-serif;
 	}
 
 	.project-subsection-subtitle {
-		font-size: 16px;
+		font-size: 14px;
 		font-family: "IBMPlexSans-Regular", "aktiv-grotesk", Arial, sans-serif;
 		margin-bottom: 30px;
 	}
@@ -386,7 +385,7 @@ img {
 
 	/** NEW HOMEPAGE **/
 	.main-section {
-		height: 100vh;
+		/*height: 100vh;*/
 	}
 
 	.main-section-container {
@@ -421,12 +420,13 @@ img {
 
 		.section-title {
 			margin-bottom: 10px;
-			font-size: 14px;
+			font-size: 16px;
+			font-size: 1.2vw;
 		}
 
 		.section-content {
-			/*margin: 0 150px 0 0;*/
-			/*font-size: 40px;*/
+			font-size: 24px;
+			font-size: 3.5vw;
 		}
 
 			.item {

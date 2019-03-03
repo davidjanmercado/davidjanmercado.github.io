@@ -71,7 +71,7 @@
 }
 
 .arrow-left-img {
-	width: 30px;
+	width: 15px;
 	margin-bottom: 20px;
 }
 
@@ -147,4 +147,10 @@
 .menu--adsila .menu__item__innerlink:hover .menu__item-label::before {
 	transform-origin: 0% 50%;
 	transition-timing-function: ease;
+}
+
+@media screen and (min-width: 40em) {
+	.arrow-left-img {
+		width: 30px;
+	}
 }

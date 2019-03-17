@@ -57,6 +57,7 @@ body {
 	.main-section-container {
 		display: flex;
 		flex-flow: column;
+		height: 100vh;
 	}
 
 	.main-section-col {

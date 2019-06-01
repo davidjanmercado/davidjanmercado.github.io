@@ -26,12 +26,12 @@ p {
   top: 20px;
   right: 20px;
   font-size: 12px;
-  color: rgba(112, 14, 164, 0.9);
+  color: rgba(253, 105, 161, 0.9);
   transition: color 200ms ease;
 }
 
 .mapboxgl-popup-close-button:hover {
-  color: rgba(112, 14, 164, 0.7);
+  color: rgba(253, 105, 161, 0.7);
   background-color: transparent;
 }
 
@@ -54,14 +54,14 @@ p {
 }
 
 .mapboxgl-popup-content .title {
-  color: #700ea4;
+  color: #FD69A1;
   font-weight: 600;
   font-size: 16px;
   padding-bottom: 16px;
 }
 
 .mapboxgl-popup-content .title-memorial {
-  color: #223b53;
+  color: #6571E9;
   font-weight: 600;
   font-size: 16px;
   padding-bottom: 16px;
@@ -74,12 +74,12 @@ p {
 .mapboxgl-popup-content .wikiLink {
   font-weight: 300;
   text-decoration: none;
-  color: rgba(112, 14, 164, 0.9);
+  color: rgba(253, 105, 161, 0.9);
   transition: color 200ms ease;
 }
 
 .mapboxgl-popup-content .wikiLink:hover {
-  color: rgba(112, 14, 164, 0.7);
+  color: rgba(253, 105, 161, 0.7);
 }
 
 .mapboxgl-container .leaflet-marker-icon {
@@ -163,22 +163,26 @@ input[type=text]:hover {
   color: white;
 }
 
+::placeholder {
+  color: white;
+}
+
 .autocomplete-active {
-  background-color: #700ea4 !important; 
+  background-color: #5669FA !important; 
   color: #ffffff; 
 }
 
 .searchButton {
   cursor: pointer;
   width: 40px;
-  background-color: rgba(112, 14, 164, 0.7);
+  background-color: rgba(86, 105, 250, 0.7);
   border: none;
   transition: background-color 200ms ease;
   outline: none;
 }
 
 .searchButton:hover {
-  background-color: rgba(112, 14, 164, 0.9);
+  background-color: rgba(86, 105, 250, 0.9);
 }
 
 /* geolocate */
@@ -189,7 +193,7 @@ input[type=text]:hover {
 }
 
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate {
-  background-color: rgba(112, 14, 164, 0.7);
+  background-color: rgba(86, 105, 250, 0.7);
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
@@ -197,12 +201,16 @@ input[type=text]:hover {
 
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate:hover,
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate:active {
-  background-color: rgba(112, 14, 164, 0.9);
+  background-color: rgba(86, 105, 250, 0.9);
 }
 
 .mapboxgl-user-location-dot,
 .mapboxgl-user-location-dot::before {
-  background-color: #223b53;
+  background-color: #26DFAC;
+}
+
+.mapboxgl-user-location-dot::after {
+  border-color: #B5BFF7;
 }
 
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate,
@@ -237,17 +245,17 @@ input[type=text]:hover {
 }
 
 .mapboxgl-ctrl-group > button {
-  background-color: rgba(112, 14, 164, 0.7);
+  background-color: rgba(86, 105, 250, 0.7);
   width: 40px;
   height: 40px;
 }
 
 .mapboxgl-ctrl-group > button:hover {
-  background-color: rgba(112, 14, 164, 0.9);
+  background-color: rgba(86, 105, 250, 0.9);
 }
 
 .mapboxgl-ctrl-group > button + button {
-  border-top: 1px solid #f1f1f1;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-zoom-in {
@@ -278,7 +286,7 @@ input[type=text]:hover {
 .language-button {
   width: 40px;
   height: 40px;
-  background-color: rgba(112, 14, 164, 0.7);
+  background-color: rgba(86, 105, 250, 0.7);
   cursor: pointer;
   color: white;
   display: flex;
@@ -287,10 +295,11 @@ input[type=text]:hover {
 }
 
 .language-button:hover {
-  background-color: rgba(112, 14, 164, 0.9);
+  background-color: rgba(86, 105, 250, 0.9);
 }
 
 #lang-fr {
-  background-color: rgba(112, 14, 164, 0.9);
+  background-color: rgba(86, 105, 250, 0.9);
 }
-/* violet: #700ea4, rgba(112, 14, 164, 1) */
+
+/* blue: #5669FA rgba(86, 105, 250, 0.9) */

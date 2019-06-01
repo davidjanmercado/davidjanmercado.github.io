@@ -293,13 +293,13 @@
     function changeLanguage(lang) {
       if (lang === 'FR') {
             language = 'fr';
-            document.getElementById("lang-fr").style.backgroundColor = 'rgba(112, 14, 164, 0.9)';
-            document.getElementById("lang-en").style.backgroundColor = 'rgba(112, 14, 164, 0.7)';
+            document.getElementById("lang-fr").style.backgroundColor = 'rgba(86, 105, 250, 0.9)';
+            document.getElementById("lang-en").style.backgroundColor = 'rgba(86, 105, 250, 0.7)';
             document.getElementById("searchItem").placeholder = "Prénom Nom";
       } else {
             language = 'en';
-            document.getElementById("lang-en").style.backgroundColor = 'rgba(112, 14, 164, 0.9)';
-            document.getElementById("lang-fr").style.backgroundColor = 'rgba(112, 14, 164, 0.7)';
+            document.getElementById("lang-en").style.backgroundColor = 'rgba(86, 105, 250, 0.9)';
+            document.getElementById("lang-fr").style.backgroundColor = 'rgba(86, 105, 250, 0.7)';
             document.getElementById("searchItem").placeholder = "Forename Surname";
       }
     }
@@ -443,17 +443,17 @@
           'circle-color': [
             'match',
             ['get', 'historic'],
-            'tomb', '#700ea4',
-            'memorial', '#223b53',
+            'tomb', '#FD69A1',
+            'memorial', '#6571E9',
             '#700ea4'
             ],
           'circle-radius': {
-            'base': 2,
+            'base': 3,
             'stops': [[15, 3], [18, 6]]
           },
-          'circle-opacity': 0.7,
+          'circle-opacity': 0.8,
           'circle-stroke-width': 1,
-          'circle-stroke-color': 'rgb(255,255,255)',
+          'circle-stroke-color': '#FFF5FA',
         }
       });
     });

@@ -272,6 +272,7 @@ input[type=text]:hover {
 .language-container {
   position: absolute;
   right: 16px;
+  display: flex;
 }
 
 .language-button {
@@ -280,6 +281,9 @@ input[type=text]:hover {
   background-color: rgba(112, 14, 164, 0.7);
   cursor: pointer;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .language-button:hover {
@@ -288,9 +292,5 @@ input[type=text]:hover {
 
 #lang-fr {
   background-color: rgba(112, 14, 164, 0.9);
-}
-
-#lang-en {
-  margin-left: -7px;
 }
 /* violet: #700ea4, rgba(112, 14, 164, 1) */

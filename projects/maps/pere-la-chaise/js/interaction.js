@@ -288,6 +288,22 @@
       };
     }
 
+    // Language
+    var language = 'fr';
+    function changeLanguage(lang) {
+      if (lang === 'FR') {
+            language = 'fr';
+            document.getElementById("lang-fr").style.backgroundColor = 'rgba(112, 14, 164, 0.9)';
+            document.getElementById("lang-en").style.backgroundColor = 'rgba(112, 14, 164, 0.7)';
+            document.getElementById("searchItem").placeholder = "Prénom Nom";
+      } else {
+            language = 'en';
+            document.getElementById("lang-en").style.backgroundColor = 'rgba(112, 14, 164, 0.9)';
+            document.getElementById("lang-fr").style.backgroundColor = 'rgba(112, 14, 164, 0.7)';
+            document.getElementById("searchItem").placeholder = "Forename Surname";
+      }
+    }
+
     var bounds = [
       [2.380726,48.854866], // Southwest coordinates
       [2.407271,48.867131]  // Northeast coordinates
@@ -356,13 +372,14 @@
 
     // Exact coordinates as arguments
     function flyToSelected(coordinates, name) {
+
       map.flyTo({
         center: coordinates,
         zoom: 18,
       });
 
       var popUps = document.getElementsByClassName('mapboxgl-popup');
-      var wikiURL = 'https://fr.wikipedia.org/api/rest_v1/page/summary/';
+      var wikiURL = 'https://' + language + '.wikipedia.org/api/rest_v1/page/summary/';
       var wikipageContent = wikiURL + name;
 
       var getJSON = function ( url, callback ) {
@@ -388,7 +405,7 @@
 
         getJSON( wikipageContent, function (response) {
         var summary = response.extract;
-        var wikiLink = "https://fr.wikipedia.org/wiki/" + name;
+        var wikiLink = 'https://' + language + '.wikipedia.org/wiki/' + name;
         var title = '<div class="title">' + name + '</div>';
         var content = '';
         if (response.title !== "Not found.") {
@@ -452,7 +469,7 @@
 
     function createPopUp(currentFeature) {
       var popUps = document.getElementsByClassName('mapboxgl-popup');
-      var wikiURL = 'https://fr.wikipedia.org/api/rest_v1/page/summary/';
+      var wikiURL = 'https://' + language + '.wikipedia.org/api/rest_v1/page/summary/';
       var wikipageContent = wikiURL + currentFeature.properties.Name;
 
       var getJSON = function ( url, callback ) {
@@ -479,7 +496,7 @@
 
       getJSON( wikipageContent, function (response) {
         var summary = response.extract;
-        var wikiLink = "https://fr.wikipedia.org/wiki/" + currentFeature.properties.Name;
+        var wikiLink = 'https://' + language + '.wikipedia.org/wiki/' + currentFeature.properties.Name;
         var title = '<div class="title">' + currentFeature.properties.Name + '</div>';
         var content = '';
         if (response.title !== "Not found.") {

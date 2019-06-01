@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Cimetière du Père-Lachaise</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='css/style.css' rel='stylesheet' />
+  <script type="text/javascript" src="js/autocomplete.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="infoboxContainer">
+    <div class="autocomplete">
+      <input type="text" name="searchItem" id="searchItem" onClick="showNames()" placeholder="Prénom Nom">
+      <div class="allItems" id="allItems"></div>
+    </div>
+    <button type="button" onClick="searchItem()" class="searchButton">
+      <img src="assets/magnifying-glass.svg" width="13px" height="13px" />
+    </button>
+  </div>
+  <div id='map'></div>
+  <script type="text/javascript" src="js/interaction.js"></script>
+
+</body>
+</html>
